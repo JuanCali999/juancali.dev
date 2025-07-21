@@ -14,8 +14,125 @@ const { title = "Resume of Juan Jesús Calisaya" } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<style>
+			:root {
+				--bg-primary: #FFFFFF;
+				--bg-secondary: #F8FAFC;
+				--text-primary: #000000;
+				--text-secondary: #1E293B;
+				--border-color: #CBD5E1;
+				--accent: #3B82F6;
+			}
+			
+			.dark {
+				--bg-primary: #191716;
+				--bg-secondary: #101114;
+				--text-primary: #FFFFFF;
+				--text-secondary: #E2E8F0;
+				--border-color: #636060;
+				--accent: #3B82F6;
+			}
+
+			/* Prevent theme flash on page load */
+			html {
+				background-color: var(--bg-primary);
+				transition: background-color 0.3s ease;
+			}
+
+			/* Ensure smooth theme transitions */
+			* {
+				transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+			}
+		</style>
+		<script>
+			// Initialize theme before page renders to prevent flash
+			(function() {
+				function getStoredTheme() {
+					if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+						return localStorage.getItem('theme');
+					}
+					if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						return 'dark';
+					}
+					return 'light';
+				}
+
+				const theme = getStoredTheme();
+				if (theme === 'dark') {
+					document.documentElement.classList.add('dark');
+				} else {
+					document.documentElement.classList.remove('dark');
+				}
+			})();
+		</script>
 	</head>
-	<body class="bg-bg min-h-screen font-sans">
+	<body style="background-color: var(--bg-primary); color: var(--text-primary);" class="min-h-screen font-sans transition-colors duration-300">
 		<slot />
+		<script is:inline>
+			// Theme management functionality
+			function getTheme() {
+				if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+					return localStorage.getItem('theme');
+				}
+				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					return 'dark';
+				}
+				return 'light';
+			}
+
+			function setTheme(theme) {
+				// Validate theme parameter
+				if (theme !== 'dark' && theme !== 'light') {
+					theme = 'light';
+				}
+				
+				const html = document.documentElement;
+				const icon = document.getElementById('theme-icon');
+				
+				if (theme === 'dark') {
+					html.classList.add('dark');
+					if (icon) icon.textContent = '☀️';
+				} else {
+					html.classList.remove('dark');
+					if (icon) icon.textContent = '🌙';
+				}
+				
+				localStorage.setItem('theme', theme);
+			}
+
+			// Initialize theme immediately to prevent flash of unstyled content
+			(function() {
+				const savedTheme = getTheme();
+				setTheme(savedTheme);
+			})();
+
+			// Initialize theme on page load and add event listeners
+			document.addEventListener('DOMContentLoaded', function() {
+				// Ensure theme is applied
+				const currentTheme = getTheme();
+				setTheme(currentTheme);
+
+				// Add theme switcher click handler
+				const themeSwitcher = document.getElementById('theme-switcher');
+				if (themeSwitcher) {
+					themeSwitcher.addEventListener('click', function() {
+						const currentTheme = getTheme();
+						const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+						setTheme(newTheme);
+					});
+				}
+			});
+
+			// Handle page navigation (prevents theme reset on language change)
+			window.addEventListener('beforeunload', function() {
+				// Theme is already saved in localStorage, no action needed
+			});
+
+			// Handle page load after navigation
+			window.addEventListener('load', function() {
+				const currentTheme = getTheme();
+				setTheme(currentTheme);
+			});
+		</script>
 	</body>
 </html>

@@ -1,0 +1,117 @@
+{
+  "name": "Juan Calisaya",
+  "title": "Estudiante de Ingeniería de Software | UPC",
+  "resume": "Desarrollador Full-Stack con enfoque en Backend, con sólidos conocimientos en el desarrollo de aplicaciones web y móviles. Interezado en el diseño de arquitecturas de software escalables y mantenibles. Apasionado por las nuevas tecnologías y el trabajo en equipo, busco construir soluciones eficientes y de calidad.",
+  "phone": "+51 990 606 385",
+  "email": "juancalijesus@gmail.com",
+  "about": "Sobre mí",
+  "aboutDescription": "Estudiante de séptimo ciclo de Ingeniería de Software en la UPC, con sólidos conocimientos en desarrollo de aplicaciones web y móviles. Interesado en el desarrollo full stack y en el diseño de arquitecturas de software escalables y mantenibles. Apasionado por las nuevas tecnologías y metodologías de desarrollo, motivado por el trabajo en equipo para construir soluciones eficientes y de calidad, alineadas con las buenas prácticas.",
+  "experience": "Experiencia",
+  "experienceTitle": "Practicante Pre Profesional de Desarrollador Web",
+  "experienceCompany": "Neonhousled",
+  "experienceDescription": "Desarrollé y mantuve funcionalidades fullstack para Contigo Voy utilizando Next.js y Laravel. Apoyé en la gestión del equipo en un entorno preprofesional usando Trello y GitHub bajo metodología ágil.",
+  "experienceWebsite": "https://centropsicologicocontigovoy.com/",
+  "education": "Educación",
+  "educationTitle": "Ingeniería de Software",
+  "educationInstitution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
+  "educationPeriod": "2021 - Actualidad",
+  "projects": "Proyectos",
+  "switchLanguage": "English",
+  "meta": {
+    "title": "Portafolio de Juan Calisaya",
+    "description": "Portafolio de Juan Calisaya - Estudiante de Ingeniería de Software en la UPC"
+  },
+  "projectParkingNow": {
+    "title": "ParkingNow",
+    "type": "Aplicación Móvil Android",
+    "year": "2025",
+    "description": "Aplicación móvil para Android desarrollada con las últimas tecnologías móviles.",
+    "tools": "Herramientas: Trello, Figma, GIT, GitHub, Android Studio, Jetpack Compose, Kotlin, Flutter, SQLite",
+    "github": "https://github.com/G3-UPC-CC238-346-ParkingNow"
+  },
+  "projectEcoMovil": {
+    "title": "EcoMovil",
+    "type": "Aplicación Web",
+    "year": "2024",
+    "description": "Aplicación web enfocada en soluciones de movilidad sostenible.",
+    "tools": "Herramientas: Trello, Jira Software, Miro, Figma (UX/UI Design), DDD, Gherkin, WebStorm, GitHub, GIT, GitFlow, HTML5, CSS3, TypeScript, Angular, Java, Spring Boot, MySQL, Docker, Azure",
+    "github": "https://github.com/Open-Source-SW56-Group-2-EcoMovil"
+  },
+  "projectRuedaRent": {
+    "title": "RuedaRent",
+    "type": "Aplicación Web",
+    "year": "2024",
+    "description": "Plataforma web para el alquiler de vehículos con interfaz moderna y funcional.",
+    "tools": "Herramientas: Trello, Figma (UX/UI Design), DDD, Gherkin, WebStorm, HTML5, CSS3, JavaScript, Vue, C#, .NET, GitHub, GitFlow, MySQL",
+    "github": "https://github.com/upc-pre-202401-si720-si91-Ruedarent"
+  },
+  "skills": "Conocimientos",
+  "skillsLanguages": {
+    "title": "Lenguajes",
+    "items": "Java, TypeScript, Kotlin, Dart, Python, PHP, C++, C#, bash"
+  },
+  "skillsFrontend": {
+    "title": "Frontend",
+    "items": "HTML5, CSS3, JavaScript, Vue.js, Angular, React, Next.js, Tailwind CSS, Flutter"
+  },
+  "skillsBackend": {
+    "title": "Backend",
+    "items": ".NET, Spring Boot, Laravel"
+  },
+  "skillsDatabases": {
+    "title": "Bases de Datos",
+    "items": "SQL, NoSQL, MySQL"
+  },
+  "skillsTools": {
+    "title": "Herramientas",
+    "items": "Git, GitHub, Docker, Azure, Figma, Jira, Trello"
+  },
+  "skillsMethodologies": {
+    "title": "Metodologías",
+    "items": "Metodologías Ágiles, Gherkin, UX/UI Design, DDD"
+  },
+  "certificates": "Certificados",
+  "socialNetworks": "Redes Sociales",
+  "certifications": {
+    "softwareArchitecture": {
+      "title": "Curso de fundamentos de arquitectura de software",
+      "institution": "Código Facilito",
+      "year": "2025"
+    },
+    "laravelProfessional": {
+      "title": "Curso de Laravel Profesional",
+      "institution": "Código Facilito",
+      "year": "2025"
+    },
+    "gitProfessional": {
+      "title": "Curso profesional de Git",
+      "institution": "Código Facilito",
+      "year": "2025"
+    },
+    "cybersecurity": {
+      "title": "IBM Cybersecurity Analyst",
+      "institution": "IBM",
+      "year": "2024"
+    },
+    "cicd": {
+      "title": "CICD Conceptos y Ventajas - Bootcamp de DevOps",
+      "institution": "Código Facilito",
+      "year": "2024"
+    },
+    "python": {
+      "title": "ISC Python: Programación y Análisis de Datos",
+      "institution": "University of Michigan",
+      "year": "2024"
+    }
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "viewProfile": "Ver Perfil"
+  },
+  "languages": "Idiomas",
+  "languagesList": {
+    "spanish": "Español (Nativo)",
+    "english": "Inglés (Intermedio B1)"
+  }
+}
